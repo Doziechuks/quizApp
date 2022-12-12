@@ -2,7 +2,7 @@ import classes from './textInput.module.css';
 import { useState } from 'react';
 
 const TextInput = ({ label, ...otherProps }) => {
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState(0);
   const handleChange = (e) => {
     setValue(e.target.value);
   };

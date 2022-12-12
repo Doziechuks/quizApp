@@ -10,9 +10,12 @@ const SelectInput = ({ label, name, options, ...otherProps }) => {
     <div className={classes.wrapper}>
       <label>{label}</label>
       <select name={name} value={value} onChange={handleChange} {...otherProps}>
-        <option value="option one">option 1</option>
-        <option value="option two">option 2</option>
-        <option value="option three">option 3</option>
+        {
+          options && options.map((option) => {
+            const {id, name} = option;
+            return <option key={id} value={id}>{name}</option>;
+          })
+        }
       </select>
       {/* <h1>{value}</h1> */}
     </div>

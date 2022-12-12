@@ -23,6 +23,10 @@
 .container form{
   width: 100%;
 }
+form a{
+  width: 100%;
+  display: block;
+}
 @media screen and (max-width: 650px) {
   .wrapper h1 {
     font-size: 1.7rem;

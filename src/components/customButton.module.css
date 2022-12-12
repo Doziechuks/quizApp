@@ -27,3 +27,12 @@
   font-weight: bold;
   border: none;
 }
+.question{
+  margin-bottom: 0.7em;
+  max-width: 100%;
+}
+@media screen and (max-width: 650px) {
+  .question{
+    font-size: 1rem;
+  }
+}

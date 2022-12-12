@@ -1,0 +1,20 @@
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+.wrapper label{
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 0.1em;
+  color: #fff;
+}
+.wrapper input{
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1.3rem;
+}

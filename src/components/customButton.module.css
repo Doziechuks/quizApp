@@ -1,0 +1,29 @@
+.button {
+  width: 100%;
+  max-width: 10em;
+  padding: 0.5em;
+  background-color: #493eff;
+  color: #fff;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: transparent;
+  color: #493eff;
+  border: 1px #493eff solid;
+}
+.settings {
+  max-width: 100%;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+.settings:hover {
+  background-color: #fff;
+  color: #1f13f7;
+  font-weight: bold;
+  border: none;
+}

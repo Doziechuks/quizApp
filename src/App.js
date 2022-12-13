@@ -5,6 +5,7 @@ import QuestionsPage from './pages/questions';
 import ScorePage from './pages/scorePage';
 import Footer from './components/footer';
 
+import { BsBookHalf } from "react-icons/bs";
 import { Route, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className={classes.wrapper}>
       <div className={classes.nav}>
-        <p>logo</p>
+        <BsBookHalf className={classes.logo} onClick={() => navigate("/")} />
         <p onClick={() => navigate("/")}>home</p>
       </div>
       <Routes>

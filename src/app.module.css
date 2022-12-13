@@ -24,6 +24,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.logo{
+  font-size: 3.5rem;
+  color: #493eff;
+  cursor: pointer;
+}
 .nav p {
   font-size: 1.5rem;
   color: #493eff;

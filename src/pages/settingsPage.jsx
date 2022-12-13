@@ -1,4 +1,5 @@
 import classes from './settingsPage.module.css';
+import Loader from '../components/loader';
 import SelectInput from '../components/selectInput';
 import TextInput from '../components/textInput';
 import CustomButton from '../components/customButton';
@@ -21,7 +22,7 @@ const SettingsPage = () => {
     {id: 'boolean', name: 'True/False'}
   ];
   if(loading){
-    return <h1>loading...</h1>
+    return <Loader />
   }
   if(error){
     return <h1>something went wrong</h1>

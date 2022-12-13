@@ -32,7 +32,6 @@ const QuestionsPage = (props) => {
   }
 
   const {response, error, loading} = useFetch({url: apiUrl});
-  console.log({response});
 
   const handleClickAnswer = (e) => {
     const question = response.results[questionIndex];
@@ -42,7 +41,7 @@ const QuestionsPage = (props) => {
     if(questionIndex + 1 < response.results.length){
       setQuestionIndex(questionIndex + 1);
     }else{
-      navigate('finalscore');
+      navigate('/finalscore');
     }
   };
 
@@ -68,7 +67,7 @@ const QuestionsPage = (props) => {
 
   return (
     <div className={classes.wrapper}>
-      <h1>question { questionIndex + 1 }</h1>
+      <h1>challenge { questionIndex + 1 }</h1>
       <div className={classes.container}>
         <p className={classes.question}>{decode(response && response.results[questionIndex].question)}</p>
         <div className={classes.options}>

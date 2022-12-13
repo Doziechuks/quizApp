@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 const SettingsPage = () => {
 
   const { response, error, loading } = useFetch({ url: "/api_category.php" });
-  // console.log(response.trivia_categories);
   const handleSubmit = (e) => {
     e.preventDefault();
   }

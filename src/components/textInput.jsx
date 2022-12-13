@@ -1,18 +1,21 @@
 import classes from './textInput.module.css';
-import { useState } from 'react';
+import { connect } from 'react-redux';
+import { handleAmountOfQuestion } from '../redux/action';
 
-const TextInput = ({ label, ...otherProps }) => {
-  const [value, setValue] = useState(0);
+const TextInput = ({ label, setAmountOfQuestion, ...otherProps }) => {
   const handleChange = (e) => {
-    setValue(e.target.value);
+    setAmountOfQuestion(e.target.value);
   };
   return (
     <div className={classes.wrapper}>
       <label>{label}</label>
-      <input onChange={handleChange} value={value} {...otherProps} />
-      {/* <h1>{value}</h1> */}
+      <input onChange={handleChange} {...otherProps} />
     </div>
   );
 };
 
-export default TextInput;
+const mapDispatchToProps =(dispatch) => ({
+  setAmountOfQuestion: (amount) => dispatch(handleAmountOfQuestion(amount)) 
+});
+
+export default connect(null, mapDispatchToProps)(TextInput);

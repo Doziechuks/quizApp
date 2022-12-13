@@ -1,5 +1,4 @@
 .wrapper{
-  border: 1px red solid;
   width: 100%;
   max-width: 45em;
   display: flex;
@@ -15,7 +14,6 @@
   margin-bottom: 1em;
 }
 .container{
-  border: 1px red solid;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -28,9 +26,8 @@
   margin-bottom: 1em;
 }
 .options{
-  border: 1px red solid;
   width: 100%;
-  max-width: 15em;
+  max-width: 20em;
   margin-bottom: 1.5em;
   display: flex;
   flex-direction: column;

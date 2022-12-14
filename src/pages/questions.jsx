@@ -31,10 +31,10 @@ const QuestionsPage = (props) => {
     finalScore,
     setFinalScore,
   } = props;
+
   const [questionIndex, setQuestionIndex] = useState(0);
   const [options, setOptions] = useState([]);
   const navigate = useNavigate();
-
   let apiUrl = `/api.php?amount=${amountOfQuestion}`;
   if (questionCategory) {
     apiUrl = apiUrl.concat(`&category=${questionCategory}`);

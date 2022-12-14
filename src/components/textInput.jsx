@@ -14,6 +14,7 @@ const TextInput = ({ label, setAmountOfQuestion, ...otherProps }) => {
   );
 };
 
+
 const mapDispatchToProps =(dispatch) => ({
   setAmountOfQuestion: (amount) => dispatch(handleAmountOfQuestion(amount)) 
 });
